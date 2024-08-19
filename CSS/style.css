@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Josefin Sans", sans-serif;
+    color: #474747;
+    background-color: #EAF4F4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+/* Top Section */
+.top-section {
+    padding: 24vh;
+    background-color: #B5D6D6;
+    background-image: url(../images/Rains.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.location-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #34495e;
+}
+
+.date-location {
+    margin-right: 10%;
+}
+
+.date,
+.location,
+.temperature {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.date {
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.temperature {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.weather-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+}
+
+.weather-icon img {
+    width: 100%;
+    height: auto;
+}
+
+/* Middle Section */
+.mid-section {
+    background-color: #B5D6D6;
+    background-image: url(../images/Clouds.png);
+    background-size: cover;
+    text-align: center;
+}
+
+.day {
+    padding-top: 2%;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.status {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+/* End Section */
+.end-section {
+    border-radius: 60px 60px 0px 0px;
+    background-color: #F5F9F9;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.todayTxt {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.dotTxt {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.arrow-left,
+.arrow-right {
+    background: none;
+    border: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #34495e;
+    font-family: "Josefin Sans", sans-serif;
+    cursor: pointer;
+    position: relative;
+    padding: 40px;
+    bottom: 100px;
+}
+
+.forecast-today {
+    text-align: center;
+}
+
+.forecast-hours {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.hour {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #E5F2F2;
+    border-radius: 44px;
+    border: #B5D6D6 solid 1px;
+    padding: 28px 22px 28px 22px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hour.active {
+    background-color: #FEE68B;
+    border: #FBDC64 solid 1px;
+    position: relative;
+    bottom: 25px;
+}
